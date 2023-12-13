@@ -4,15 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemons</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
     <body>
         <div id="vistaaniadir">
-            <h1>Añadir Pokemons</h1>
+            <h1>Añadir Pokémons</h1>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre">
+
+                <label for="vida">Vida</label>
+                <input type="number" id="vida" name="vida">
+
+                <label for="fuerza">Fuerza</label>
+                <input type="number" id="fuerza" name="fuerza">
+
+                <label for="magia">Magia</label>
+                <input type="number" id="magia" name="magia">
+
+            </form>
+            <button id="btnguardar">Guardar</button>
+
             <button id="btnlista">Lista</button>
         </div>
         <div id="vistalistar">
-            <h1>Lista Pokemons</h1>
+            <h1>Lista Pokémon</h1>
             <button id="btnaniadir">Añadir</button>
+            <div id="divlista">
+            </div>
         </div>
         <script type="module" src="controller.js"></script>
     </body>
