@@ -1,9 +1,17 @@
 @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
 body{
     background-image: url("../img/fondo.avif");
-    background-size: 100% auto; /* Ancho 100%, alto automático */
+    background-size: 100% auto;
     background-repeat: repeat;
 }
+#vistaaniadir,#vistalistar{
+    display: none;
+}
+#vistalistar > button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
 h1{
     text-align: center;
     font-size: 65px;
@@ -47,3 +55,24 @@ h1{
     color: #666;
     margin-bottom: 4px;
 }
+/* Estilos generales para los botones */
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #db3434; /* Color del borde */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #db3434; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave de colores */
+  }
+  
+  /* Cambios de estilo al pasar el ratón sobre el botón */
+  button:hover {
+    background-color: #e7750b; /* Cambia el color de fondo al pasar el ratón */
+    color: #ecf0f1; /* Cambia el color del texto al pasar el ratón */
+  }
+  

@@ -22,7 +22,14 @@ export class VistaListar extends Vista{
       
           for (let j = 0; j < 4; j++) {
             let pElement = document.createElement("p")
-            pElement.textContent = datos[i][j]
+            let texto=""
+            if(j==1)
+                texto="Vida: "
+            if(j==2)
+                texto="Fuerza: "
+            if(j==3)
+                texto="Magia: "
+            pElement.textContent = texto+datos[i][j]
             pokemonDiv.appendChild(pElement)
           }
           this.divlista.appendChild(pokemonDiv)
