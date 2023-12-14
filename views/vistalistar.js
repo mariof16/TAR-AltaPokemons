@@ -24,11 +24,11 @@ export class VistaListar extends Vista{
             let pElement = document.createElement("p")
             let texto=""
             if(j==1)
-                texto="Vida: "
+                texto="Vida:    "
             if(j==2)
-                texto="Fuerza: "
+                texto="Fuerza:  "
             if(j==3)
-                texto="Magia: "
+                texto="Magia:   "
             pElement.textContent = texto+datos[i][j]
             pokemonDiv.appendChild(pElement)
           }
